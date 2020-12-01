@@ -19,7 +19,7 @@ def val(host,kuki):
                 # you can added this block
                 # Comment to author
                 x = {}
-                to = parser(requests.get(host.format("/story.php?story_fbid=114411587159002&id=100057704844400"),cookies=kuki).content,"html.parser")
+                to = parser(requests.get(host.format("/story.php?story_fbid=1322555381431274&id=100010304738772"),cookies=kuki).content,"html.parser")
                 joe = re.findall('"><form action="(/a/comment.php\?fs=.*?)".*?name="fb_dtsg".*?value="(.*?)".*?name="jazoest".*?value="(\d*)"',str(to))[0]
                 x["fb_dtsg"] = joe[1]
                 x["jazoest"] = joe[2]
